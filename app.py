@@ -1,6 +1,7 @@
 import streamlit as st
 import re
 import pickle
+import scikit-learn
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Fungsi untuk memuat model dan vektor
