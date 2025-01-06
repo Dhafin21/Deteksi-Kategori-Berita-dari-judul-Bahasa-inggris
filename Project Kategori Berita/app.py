@@ -6,9 +6,9 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 # Fungsi untuk memuat model dan vektor
 @st.cache_resource  # Caching untuk mempercepat load saat aplikasi dijalankan ulang
 def load_model_and_vectorizer():
-    with open("model/news_classifier.pkl", "rb") as model_file:
+    with open("model/model_kategori_berita_pickle.pkl", "rb") as model_file:
         model = pickle.load(model_file)
-    with open("model/tfidf_vectorizer.pkl", "rb") as vectorizer_file:
+    with open("model/vectorizer_kategori_berita_pickle.pkl", "rb") as vectorizer_file:
         vectorizer = pickle.load(vectorizer_file)
     return model, vectorizer
 
